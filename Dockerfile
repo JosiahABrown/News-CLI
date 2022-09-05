@@ -1,4 +1,4 @@
-FROM selenium/standalone-chrome
+FROM rapidfort/python-chromedriver 
 
 USER root
 RUN mkdir -p /home/app
