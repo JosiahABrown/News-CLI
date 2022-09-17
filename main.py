@@ -17,11 +17,17 @@ class setUp:
         self.website = website
         self.driver.get(website)
 
+
+class epochTimes(setUp):
+
+    def __init__(self, website):
+        super().__init__(website)
+
     def get_title(self):
         print(self.driver.title)
     # page.MainPage.print_us_top()
 
 
 if __name__ == '__main__':
-    epoch_times = setUp("https://www.theepochtimes.com/us-news")
-    print(epoch_times.get_title())
+    epochTimes = epochTimes("https://www.theepochtimes.com/us-news")
+    print(epochTimes.get_title())
