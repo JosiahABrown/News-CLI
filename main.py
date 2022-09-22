@@ -24,7 +24,7 @@ class epochTimes(setUp):
         super().__init__(website)
 
     def get_title(self):
-        print(self.driver.title)
+        return self.driver.title
     # page.MainPage.print_us_top()
 
 
