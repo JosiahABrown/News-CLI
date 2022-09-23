@@ -25,9 +25,12 @@ class epochTimes(setUp):
 
     def get_title(self):
         return self.driver.title
-    # page.MainPage.print_us_top()
+
+    def us_top(self):
+        page.MainPage.print_us_top(self)
 
 
 if __name__ == '__main__':
-    epochTimes = epochTimes("https://www.theepochtimes.com/us-news")
-    print(epochTimes.get_title())
+    et = epochTimes("https://www.theepochtimes.com/us-news")
+    et.get_title()
+    et.us_top()
