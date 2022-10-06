@@ -15,5 +15,5 @@ Not the fastest tool but it's more of interacting learning project than it is a 
 
 ## To-Do
 
-- [ ] Loop through elements in US top News div
 - [ ] Create Docker Compose file
+- [ ] Grab links and display them as hyperlinks along side top 10 output. [As Seen Here](https://www.willmcgugan.com/blog/tech/post/real-working-hyperlinks-in-the-terminal-with-rich/)
