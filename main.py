@@ -20,8 +20,10 @@ class setUp:
 
 class epochTimes(setUp):
 
-    def __init__(self, website):
-        super().__init__(website)
+    website = "https://www.theepochtimes.com/us-news"
+
+    def __init__(self):
+        super().__init__(self.website)
 
     def get_title(self):
         return self.driver.title
@@ -31,6 +33,6 @@ class epochTimes(setUp):
 
 
 if __name__ == '__main__':
-    et = epochTimes("https://www.theepochtimes.com/us-news")
+    et = epochTimes()
     et.get_title()
     et.us_top()
