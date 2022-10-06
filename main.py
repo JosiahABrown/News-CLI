@@ -34,5 +34,4 @@ class epochTimes(setUp):
 
 if __name__ == '__main__':
     et = epochTimes()
-    et.get_title()
     et.us_top()
