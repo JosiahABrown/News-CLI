@@ -15,6 +15,5 @@ Not the fastest tool but it's more of interacting learning project than it is a 
 
 ## To-Do
 
-- [ ] Get ONLY text from US top News div1 header
 - [ ] Loop through elements in US top News div
-- [ ] Create Docker Compose fil
+- [ ] Create Docker Compose file
