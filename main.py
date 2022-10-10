@@ -1,4 +1,6 @@
+#!/usr/bin/python3
 import page
+import time
 from selenium import webdriver
 
 
@@ -11,7 +13,7 @@ class setUp:
         options.add_argument("--window-size=800,600")
         options.add_argument("--disable-dev-shm-usage")
         self.driver = webdriver.Remote(
-                command_executor='http://localhost:4444/wd/hub',
+                command_executor='http://127.0.0.1:4444/wd/hub',
                 options=options
                 )
         self.website = website
@@ -33,5 +35,6 @@ class epochTimes(setUp):
 
 
 if __name__ == '__main__':
+    time.sleep(5)
     et = epochTimes()
     et.us_top()

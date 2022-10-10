@@ -1,8 +1,9 @@
-FROM rapidfort/python-chromedriver 
+FROM python
 
 USER root
-RUN mkdir -p /home/app
+RUN mkdir -p /home/app && \
+	pip install -U selenium
 
 COPY . /home/app
 
-CMD ["python", "main.py"]
+CMD ["python", "/home/app/main.py"]
